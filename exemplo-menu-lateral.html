@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Menu - Lateral</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+        }
+
+        .conteudo-principal{
+            background-color: orange;
+            color: white;
+            display: flex;
+            text-align: center;
+            margin: 4px;
+            padding: 4px;
+            height: 7vh;
+            width: 100vw;
+            border-radius: 10px;
+            
+
+
+        }
+
+        .logo{
+            margin: 4px;
+            padding: 20px;
+            font-size: 30px;
+
+        }
+
+        .menu-lateral{
+            background-color: orange;
+            color: white;
+            padding: 30px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            gap: 15px;
+            width: 15vw;
+            height: 40vh;
+            border-radius: 5px;
+        }
+
+        .icone{
+            color: white;
+            font-size: 20px;
+            margin: 4px        
+        }
+
+        .conteudo{
+            background-color: red;
+            color: black;
+            text-align: end;
+            justify-items: start;
+            margin: 10px;
+
+        }
+
+        .cabecalho{
+            justify-items: start;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="menu-lateral">
+        <div class="logo">
+            <span><i class="fa fa-briefcase" style="font-size:24px"></i> Sistema</span>
+        </div>
+
+        <a href="#"class="link=menu"><span class="icone"><i class="fa fa-area-chart"></i></span>Dashboard</a>
+        
+        <a href="#" class="link=menu"><span class="icone"><i class="fa fa-users"></i></span>Usuários</a>
+        
+        <a href="#" class="link=menu"><span class="icone"><i class="fa fa-gift"></i></span>Produtos</a>
+        
+        <a href="#" class="link=menu"><span class="icone"><i class="fa fa-shopping-cart"></i></span>Vendas</a>
+        
+        <a href="#" class="link=menu"><span class="icone"><i class="fa fa-gear"></i></span>Configurações</a>
+    </nav>
+    
+    <main class="conteudo-principal">
+        <header class="cabecalho">
+            <h1>Dashboard do Sistema</h1>
+            <p>Bem vindo ao painel administrativo</p>
+        </header>
+
+        <section class="conteudo">
+            <h2>Visão Geral</h2>
+            <p>Este sistema é destinado a exemplificar Menu Lateral</p>
+
+            <div>
+                <h3>Característica:</h3>
+                <ul>
+                    <li>Menu lateral com links</li>
+                    <li>Layout Flexbox</li>
+                    <li>Design Organizado</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
